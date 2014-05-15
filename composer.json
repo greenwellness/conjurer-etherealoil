@@ -1,0 +1,31 @@
+{
+    "name": "conjurer/etherealoil",
+    "description": "The GreenWellness Magento (Conjurer) bundle of extensions/skins isolated.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Jentzema",
+            "email": "rob@wellnessbon.nl"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+            "magento-hackathon/magento-composer-installer":"*"
+    },
+    "extra":{
+        "magento-root-dir": ".",
+        "map": [
+            ["themes/waterlee/default/skin", "public/skin/frontend/ethr/default"],
+            ["themes/waterlee/default/design", "public/app/design/frontend/ethr/default"],
+            ["modules/GreenWellness/EtherealOil.xml", "public/app/etc/modules/GreenWellness_EtherealOil.xml"],
+            ["modules/GreenWellness/code", "public/app/code/local/GreenWellness/EtherealOil"],
+            ["modules/GreenWellness/frontend/layout/GreenWellness_EtherealOil.xml", "public/app/design/frontend/base/default/layout/GreenWellness_EtherealOil.xml"]
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+== Conjurer's Ethereal Oil (level 10)
+
+First and foremost, let it be known that working with Magento is more than just
+'web development'. There are, amongst Mage developers, a portion of people who
+code not for fun or profit, but simply as a display of their craft as an art
+form. They might not like Magento all that much, and, in a way that may
+be...unique, or unusual. Sometimes they may not even be into PHP itself, and I
+would venture to say that being a "Conjurer" puts you in that weird, untitled
+category. Henceforth, Conjurer is your name! 
+
+image::http://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hieronymus_Bosch_051.jpg/288px-Hieronymus_Bosch_051.jpg[]
+
+Becoming a Conjurer has various implications, the first of which being that you
+will sacrifice the bulk of your development time nitpicking weird, random
+brainfarts from the past, whether they be of http://phpsadness.com/[PHP] or
+http://magentomadness.wordpress.com/[Magento] originated madness.
+
+
+
