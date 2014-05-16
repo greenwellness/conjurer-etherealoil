@@ -1,0 +1,10 @@
+
+== Notes #1
+
+=== Commands
+
+Some stuff I probably shouldn't forget and at some point wrap in a shell
+function or in Phing build.xml
+
+- `phpcs --standard=vendor/magento-ecg/coding-standard/Ecg .` from mage root
+
