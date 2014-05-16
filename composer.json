@@ -1,31 +1,56 @@
 {
-    "name": "conjurer/etherealoil",
-    "description": "The GreenWellness Magento (Conjurer) bundle of extensions/skins isolated.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Rob Jentzema",
-            "email": "rob@wellnessbon.nl"
-        }
-    ],
     "repositories": [
         {
+           "type": "vcs",
+           "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        },
+        {
             "type": "vcs",
-            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+            "url": "https://github.com/zeljkoprsa/waterlee-boilerplate"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-            "magento-hackathon/magento-composer-installer":"*"
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "dev-master",
+        "instaclick/php-code-sniffer": "*",
+        "n98/magerun": "dev-master",
+        "kalenjordan/magerun-addons":"dev-master",
+        "phpmd/phpmd": "dev-master",
+        "phpunit/phpunit": "dev-master",
+        "phpunit/phpunit-mock-objects": "2.2.*@dev",
+        "phpunit/php-code-coverage": "3.0.*@dev"
+
     },
-    "extra":{
-        "magento-root-dir": ".",
-        "map": [
-            ["themes/waterlee/default/skin", "public/skin/frontend/ethr/default"],
-            ["themes/waterlee/default/design", "public/app/design/frontend/ethr/default"],
-            ["modules/GreenWellness/EtherealOil.xml", "public/app/etc/modules/GreenWellness_EtherealOil.xml"],
-            ["modules/GreenWellness/code", "public/app/code/local/GreenWellness/EtherealOil"],
-            ["modules/GreenWellness/frontend/layout/GreenWellness_EtherealOil.xml", "public/app/design/frontend/base/default/layout/GreenWellness_EtherealOil.xml"]
-        ]
+    "require": {
+        "composer/composer": "1.0.*@dev",
+        "magento-hackathon/magento-composer-installer": "*",
+        "magento-ecg/coding-standard": "dev-php-5.3-compatible",
+        "magento-ecg/magento-finder": "dev-master",
+        "zeljkoprsa/waterlee-boilerplate": "dev-master",
+        "pharen/pharen": "dev-master",
+        "doctrine/annotations": "dev-master",
+        "doctrine/cache": "dev-master",
+        "symfony/http-foundation": "~2.4",
+        "symfony/intl": "~2.4",
+        "symfony/config": "~2.4",
+        "symfony/dependency-injection": "~2.4",
+        "symfony/http-kernel": "~2.4",
+        "phing/phing": "dev-master",
+        "sebastian/comparator": "dev-master",
+        "pdepend/pdepend": "2.0.0.*@dev",
+        "tedivm/jshrink": "dev-master",
+        "zendframework/zend-uri": "*",
+        "zendframework/zend-db": "~2.1.6"
+
+    },
+    "extra": {
+        "magento-root-dir": "./",
+        "magento-deploystrategy": "copy",
+        "minimum-stability": "dev",
+        "magento-force": "true"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "bin-dir": "scripts"
     }
 }
+

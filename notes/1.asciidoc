@@ -8,3 +8,14 @@ function or in Phing build.xml
 
 - `phpcs --standard=vendor/magento-ecg/coding-standard/Ecg $PWD/app/code/local/Servicing` e.g. from mage root
 
+NOTE: Composer can be a bit unyielding in operation and management of versions. Usually it takes a few tries
+to figure out how to properly pull in a package if not clearly mentioned in a README.
+
+- you might be able to install some latest version packages using: `composer require "someuser/somepkg":"*"`
+- using the wildcard asterix `*` to create ``unbound version constraints'' is not advisable however 
+- chances are you need to add to `composer.json` the ``extra'' key with the hash ``minimum-stability''
+  and value ``dev'' then you can use `composer require "bleeding/edge":"dev-master"`
+- magerun has a different composer install method: `composer create-project n98/magerun`?? nope
+
+
+
